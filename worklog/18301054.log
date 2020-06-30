@@ -1,0 +1,4 @@
+配置spark 因网速问题多次下载失败，最后终于成功下载解压。
+配置hadoop 下载过程顺利 解压时遇到无权限问题 通过“以管理员身份解压”成功解决。
+因spark和hadoop配置到根目录时多了一级文件目录，配置环境变量路径错误，导致在命令行操作中出现问题。重新更改文件目录，得到解决。
+在命令行输入pyspark时弹出错误"ERROR Shell: Failed to locate the winutils binary in the hadoop binary path"，发现是少了winutils.exe程序，最后得以解决。
