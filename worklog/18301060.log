@@ -1,14 +1,17 @@
 任务完成情况：
-
-完成python配置
-完成pycharm安装配置
-完成Java JDK配置
-在anaconda开启虚拟环境，并安装完成所需依赖包
-完成spark、hadoop安装并测试安装成功
+上午：
+·完成python配置
+·完成pycharm安装配置
+·完成Java JDK配置
+·在anaconda开启虚拟环境，并安装完成所需依赖包
+·完成spark、hadoop安装并测试安装成功，但pyspark无法运行
+下午：
+·解决上午未解决的问题，重配python后成功运行pyspark，并配置好相关依赖包
+·下载数据资源网站1980至今的北京天气数据
+·学习数据清洗操作过程，掌握相关操作，尝试清洗部分天气数据并清洗成功
 
 
 安装过程踩坑记录：
-
-安装hadoop后缺少winutils.exe导致报错，重新补全文件后运行成功
-未安装pyspark并在环境变量设置导致pyspark命令无法使用
-python版本不匹配导致pyspark运行失败，降级至3.6.5后运行成功
+·安装hadoop后缺少winutils.exe导致报错，重新补全文件后运行成功
+·python版本不匹配导致pyspark运行失败，降级至3.6.5后运行成功
+·使用anaconda配置pyspark一直无法成功，最终选择使用本地环境配置
