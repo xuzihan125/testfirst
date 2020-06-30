@@ -11,3 +11,4 @@
 
 安装hadoop后缺少winutils.exe导致报错，重新补全文件后运行成功
 未安装pyspark并在环境变量设置导致pyspark命令无法使用
+python版本不匹配导致pyspark运行失败，降级至3.6.5后运行成功
