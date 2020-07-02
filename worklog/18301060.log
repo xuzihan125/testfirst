@@ -45,3 +45,16 @@ DATE: 2020.7.2
  tomcat是服务器，更形象地说是一种容器。
  jsp、spring具有相似的功能，jsp更适合小型网站，但是它只是为了临时写写简单的应用设计的，存在很大的限制。
  因此最终我们决定尝试上spring。
+晚上：
+·学习json相关知识
+·学习spring项目搭建过程
+初步搭建springboot应用时，报错：Failed to configure a DataSource: 'url' attribute is not specified and no embedd
+问题出在没有配置spring - datasource - url 属性。
+解决：在application.properties/或者application.yml文件中添加数据库配置信息：
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/read_data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+配置后保存运行成功。
