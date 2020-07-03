@@ -45,3 +45,36 @@ DATE: 2020.7.2
  tomcat是服务器，更形象地说是一种容器。
  jsp、spring具有相似的功能，jsp更适合小型网站，但是它只是为了临时写写简单的应用设计的，存在很大的限制。
  因此最终我们决定尝试上spring。
+晚上：
+·学习json相关知识
+·学习spring项目搭建过程
+初步搭建springboot应用时，报错：Failed to configure a DataSource: 'url' attribute is not specified and no embedd
+问题出在没有配置spring - datasource - url 属性。
+解决：在application.properties/或者application.yml文件中添加数据库配置信息：
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/read_data?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+配置后保存运行成功。
+
+
+DATE: 2020.7.2
+任务完成情况：
+上午：
+·了解tomcat、spring、flask之间的关系
+·学习css基本知识
+·开始动手构建静态网页，预计今天能够出一个demo
+下午：
+·完成网页demo1，已上传。但是还未加入图表。
+demo1只是构建了静态的只有文字气温信息的网页，图表功能将在学习echarts使用后在demo2中加入
+·idea项目出现问题，重开项目后war包报错，无法打开网页，问题尚未解决，进度停滞...
+
+更新：在一下午艰苦卓绝的奋斗下，终于正常了...在此记录一下坑：
+idea项目没有from module选项是因为在module里没有add web
+artifact 的war包报错删掉重建，但是之后神奇的报了404，一直无法解决。
+之后选择新开项目直接移植，却发现生成的html除了背景图什么都没了...
+然后逐个注释掉找原因，发现是css包link语句的原因，尝试删掉那个语句重新输入一遍居然就好了...大概是程序的问题吧...
+经历了一下午又回到最初的起点...接下来继续研究echarts的使用，争取尽快实现demo2
+
