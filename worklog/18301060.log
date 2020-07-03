@@ -58,3 +58,15 @@ spring:
     password: 123456
     driver-class-name: com.mysql.jdbc.Driver
 配置后保存运行成功。
+
+
+DATE: 2020.7.2
+任务完成情况：
+上午：
+·了解tomcat、spring、flask之间的关系
+·学习css基本知识
+·开始动手构建静态网页，预计今天能够出一个demo
+下午：
+·完成网页demo1，已上传。但是还未加入图表。
+demo1只是构建了静态的只有文字气温信息的网页，图表功能将在学习echarts使用后在demo2中加入
+·idea项目出现问题，重开项目后war包报错，无法打开网页，问题尚未解决，进度停滞...
