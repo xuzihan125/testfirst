@@ -86,3 +86,14 @@ web项目真的一言难尽，构建过程中多次出现修改代码但是生�
 2.tomcat缓存，需要通过删除代码重写、设置configurations、rebuild等方式解决
 初学web真的一路都是坑...
 明天将继续学习JavaScript的相关知识，以实现网页动态化功能。
+
+
+DATE: 2020.7.4
+任务完成情况：
+上午：
+·学习JavaScript相关知识
+接触到js之后也更清楚地理解了在web前端开发中，HTML、CSS、JavaScript三者之间的关系：
+·HTML 定义了网页的内容
+·CSS 描述了网页的布局
+·JavaScript 网页的行为
+通俗一点说，HTML为网页搭建了静态的框架，CSS则是让静态网页看起来更漂亮，而JavaScript就是让网页“动”起来
