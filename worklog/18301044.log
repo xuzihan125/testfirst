@@ -88,6 +88,9 @@ hadoop显示未知内部或外部命令，考虑是环境变量问题
 成功部署后开始学习Django的websocket方面，准备于flask端进行连接和传输json数据
 并找到了Django自带数据库的用例，已开始学习，准备与login和register的web前端进行相连获取表单数据和数据库进行增删改查实现登录注册功能
 
+2020.7.7
+通过Django模板实现Django后端与JS的数据传输与展示
+通过Django以及JS发送ajax请求实现查询别的城市功能动态刷新网页
 
 
 
