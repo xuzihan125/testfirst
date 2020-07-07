@@ -47,3 +47,52 @@ hadoop显示未知内部或外部命令，考虑是环境变量问题
 接下来的计划是继续学习spring在web和database方面的模块，并初步书写登录和接另一端传来的json类数据
 然后学习flask与spring的websocket相连并努力做出迭代一
 目前仍处于知识储备阶段
+2020.7.5
+继续学习spring-mybatis模块的相关配置以及websocket的方面
+大致看懂了mybatis在spring中的配置文件的书写
+初步尝试写简单的数据库模块的应用
+2020.7.6
+小组决定更换spring为Django框架
+开始转向学习Django框架
+首先通过anaconda创建了一个新的py3.7环境安装了Django库及其相关依赖
+然后通过学习使用django-admin startproject projectname命令在文件下通过powershell打开cmd创建对应工程
+使用pycharm打开该工程
+通过python manage.py startapp appname创建了一个新的app（也就是功能模块）
+简单配置了urls.py以及settings.py
+通过本地host成功打开配置成功的页面
+接下来按照教程，简单配置了一个显示helloworld的html页面
+初步应用了Django的templates的配置
+包括全部app调用manage.py同级文件夹templates下的对应app的html或者在app目录下新建templates文件夹，django将自动搜寻该目录下的html文件作为模板
+本项目暂且采用了该模式但同时学会了配置settings.py下TEMPLATES_DIR的路径
+随后尝试将webdemo3移植到该框架下
+出现了不能调用访问静态资源文件如css，js，jpg等的问题，网页无法正常显示效果
+发现是没有正确配置static的原因
+通过官方文档修改了settings.py关于STATIC_DIR STATIC_URL的配置
+在app目录下创建了static文件夹
+通过static标签 { % load static % }修改html配置，以及修改原先link，script等标签的路径为{% static '相对于static文件夹的路径'}
+由于版本不同标签也可能是{ % load staticfiles % }
+经过多次尝试无果
+后改用尝试将static文件夹放在项目文件夹下一级目录上，然后添加static url的配置，使得项目在app目录下不能正常搜寻到相应静态资源文件时可以从项目工程目录下寻找
+但仍然无果
+后来再尝试通过命令将各app下static和templates集成到项目文件目录下（STATIC_ROOT等）
+依然无果
+查看网页源代码发现已删除掉的注释和修改的html源码未呈现
+初步怀疑为浏览器内存原因，经过清理浏览数据，勾选不缓存的源代码选项，重新开启服务器都无果
+更换浏览器为QQ浏览器，IE，FireFox,Yandex都无果
+后经打开本地html文件发现依然没有修改
+意识到是未保存文件的问题
+经以往惯性思维认为运行了项目就自动保存修改了但实际上是通过命令启动服务器，并未保存文件
+且因为settings.py有了更新后服务器会自动更新所以一直没有想到是文件未保存的问题
+经过保存修改后的html代码后问题解决
+（感觉自己浪费了一下午的时间，一直纳闷官方文档咋还是错的，误以为是自己django配置问题，后来发现纯粹憨批没有保存文件）
+成功部署后开始学习Django的websocket方面，准备于flask端进行连接和传输json数据
+并找到了Django自带数据库的用例，已开始学习，准备与login和register的web前端进行相连获取表单数据和数据库进行增删改查实现登录注册功能
+
+
+
+
+
+
+
+
+
