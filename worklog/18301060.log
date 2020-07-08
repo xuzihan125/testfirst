@@ -159,3 +159,7 @@ DATE：2020.7.8
 上午：
 ·测试django与网页的数据交互，确定正常
 ·学习websocket相关知识，下午将尝试与模型实现websocket连接
+下午：
+·开小组会对接进度
+·将注册和登录界面接入django，还需做数据处理
+·研究django的websocket配置
