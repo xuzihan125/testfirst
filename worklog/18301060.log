@@ -184,3 +184,6 @@ DATE：2020.7.10
 下午：
 ·遭遇dependence hell...
 ·与flask连接不顺...数据传输出现问题，正在尝试解决。
+晚上：
+·完成websocket的handshake过程
+·测试实现了websocket单次传输
