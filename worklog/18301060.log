@@ -187,3 +187,9 @@ DATE：2020.7.10
 晚上：
 ·完成websocket的handshake过程
 ·测试实现了websocket单次传输
+
+
+DATE：2020.7.11
+·连续多日奋战到深夜...昨天又熬到快凌晨4点，终于跑通了websocket！终于有成果了！
+·今天将解决dependence hell，之后对整个系统进一步优化与测试
+·今天也要开始准备着手做ppt了
